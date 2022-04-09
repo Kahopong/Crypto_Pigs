@@ -17,6 +17,7 @@ function App() {
       const openseaData = await axios.get(
         '/assets?asset_contract_address=0x8661889Aa1D54504c3239744B800E79A7894a923&order_direction=asc'
       )
+      console.log(openseaData)
       console.log(openseaData.data.assets)
       setPigListData(openseaData.data.assets)
     }
@@ -26,7 +27,7 @@ function App() {
   return (
     <div className="app">
       <Header setSearch={setSearch}/>
-      {pigListData.length > 0 && (
+      {pigListData?.length > 0 && (
         <>
           <Main selectedPig={selectedPig} pigListData={pigListData}/>
           <PigList pigListData={pigListData} setSelectedPig={setSelectedPig} search={search}/>
