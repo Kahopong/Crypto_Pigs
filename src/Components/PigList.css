@@ -1,0 +1,14 @@
+.pigList {
+    cursor: pointer;
+    overflow: scroll;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white; 
+}
+
+.noMore {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 10px;
+}

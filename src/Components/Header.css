@@ -1,0 +1,74 @@
+.header{
+    color: #fff;
+    height: 100px;
+    margin-bottom: 10px;
+    overflow-x: scroll;
+  }
+  
+  .header > div{
+    margin: 10px;
+  }
+  
+  .pigLogo{
+    width: 200px;
+  }
+  
+  .searchBar{
+    background-color: #1c1c1e;
+    height: 50px;
+    flex: 1;
+    border-radius: 50px;
+  }
+  
+  .searchIconContainer{
+    margin: 10px;
+  }
+  
+  .searchInput{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    outline: none;
+    color: #eee;
+    font-size: 16px;
+    min-width: 250px;
+  }
+  
+  .headerItems {
+    color: #a1a5b0;
+  }
+  
+  .headerItems > p{
+    margin: 10px;
+  }
+  
+  .headerActions > div {
+    margin: 10px;
+  }
+  
+  .themeSwitchContainer{
+    background-color: #1c1c1e;
+    border-radius: 50%;
+    padding: 15px;
+    object-fit: contain;
+  }
+  
+  .themeSwitchContainer > img {
+    height: 25px;
+  }
+  
+  .loginButton {
+    background: linear-gradient(to right, #59f9b7, #66feea);
+    padding: 15px 40px;
+    border-radius: 50px;
+    color: black;
+    white-space: nowrap;
+  }
+
+  .loginButton > a,
+  .loginButton > a:focus,
+  .loginButton > a:active,
+  .loginButton > a:hover{
+      all: unset;
+      cursor: pointer;
+  }
