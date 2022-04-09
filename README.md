@@ -1,3 +1,12 @@
+# Crypto Pigs - An NFT project
+
+Built with third-web and React.js
+
+Launched on Ethereum Rinkeby Test Network
+
+Visit https://testnets.opensea.io/collection/crypto-pigs-v3 to see more.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
