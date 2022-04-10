@@ -1,7 +1,6 @@
 .main{
     max-height: 50vh;
     margin-bottom: 40px;
-    overflow-x: scroll;
     border-bottom: 1px solid #fff;
 }
 
@@ -31,14 +30,19 @@
     color: white;
 }
 
+.pigDetails > div{
+    margin-bottom: 20px;
+}
+
+
 .title {
-    font-size: 72px;
+    font-size: min(72px, 6.5vw);
     font-weight: 800;
 }
 
 .itemNumber {
     color: #a1a5b0;
-    font-size: 48px;
+    font-size: min(48px, 5vw);
     align-self: center;
 }
 
@@ -69,12 +73,17 @@
 }
 
 .ownerDetails {
-    flex: 1
+    display: flex;
+    align-items: center;
+    flex: 0.75;
+    font-size: min(13px, 3vw);
 }
 
 .ownerNameAndHandle {
-    flex: 1
+    flex: 0.75;
 }
+
+
 
 .ownerHandle {
     color: #00ebfe;
@@ -120,4 +129,27 @@
 .moreIcon > a:hover{
     all: unset;
     cursor: pointer;
+}
+
+.socialMedia {
+    display: flex;
+    align-items: center;
+}
+
+@media  (max-width: 600px) {
+    .socialMedia {
+        display: none;
+    }
+    .moreIcon {
+        padding: 8px 14px;
+        font-size: 12px;
+        border-radius: 50px;
+    }
+    .ownerDetails{
+        font-size: 12px;
+    }
+    .ownerAddress {
+        max-width: 40vw;
+        word-wrap: break-word;
+    }
 }

@@ -30,6 +30,34 @@ export default function Main({ selectedPig, pigListData }) {
                     {activePig?.name}
                 <span className='itemNumber'>.#{activePig?.token_id}</span>
                 </div>
+
+                <div className="socialMediaContainer d-flex align-items-center"> 
+                    <div 
+                    className='socialMedia'
+                    onMouseEnter={()=>setIsShowingSocialMedia(false)}
+                    onMouseLeave={()=>setIsShowingSocialMedia(true)}
+                    >
+                        {isShowingSocialMedia ? (
+                            <>
+                                <div className='ownerLink'>
+                                    <img src={instagramLogo} alt=''/>
+                                </div>
+                                <div className='ownerLink'>
+                                    <img src={twitterLogo} alt=''/>
+                                </div>
+                            </>
+                        ) : (
+                            <>
+                                <div className='comingSoon text-center'>
+                                    Coming Soon
+                                </div>
+                            </>
+                        )}                        
+                    </div>
+                    <div className='moreIcon'>
+                        <a href={`https://testnets.opensea.io/assets/0x8661889aa1d54504c3239744b800e79a7894a923/${activePig?.token_id}`} target='_blank' rel="noreferrer">View More</a>
+                    </div>
+                </div>
         
                 <div className='owner d-flex'>
                     <div className='ownerImageContainer'>
@@ -37,37 +65,13 @@ export default function Main({ selectedPig, pigListData }) {
                             src={activePig?.owner?.profile_img_url} alt=''
                         />
                     </div>
-                    <div className='ownerDetails d-flex align-items-center'>
+                    <div className='ownerDetails'>
                         <div className='ownerNameAndHandle'>
                             <div className='ownerTitle'>Owner:</div>
                             <div className='ownerAddress'>{activePig?.owner?.address}</div>
                             <div className='ownerHandle'>@cryptopigs</div>
                         </div>
-                        <div 
-                        className='socialMedia d-flex align-items-center'
-                        onMouseEnter={()=>setIsShowingSocialMedia(false)}
-                        onMouseLeave={()=>setIsShowingSocialMedia(true)}
-                        >
-                            {isShowingSocialMedia ? (
-                                <>
-                                    <div className='ownerLink'>
-                                        <img src={instagramLogo} alt=''/>
-                                    </div>
-                                    <div className='ownerLink'>
-                                        <img src={twitterLogo} alt=''/>
-                                    </div>
-                                </>
-                            ) : (
-                                <>
-                                    <div className='comingSoon text-center'>
-                                        Coming Soon
-                                    </div>
-                                </>
-                            )}                        
-                        </div>
-                        <div className='moreIcon'>
-                            <a href={`https://testnets.opensea.io/assets/0x8661889aa1d54504c3239744b800e79a7894a923/${activePig?.token_id}`} target='_blank' rel="noreferrer">View More</a>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

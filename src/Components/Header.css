@@ -2,7 +2,6 @@
     color: #fff;
     height: 100px;
     margin-bottom: 10px;
-    overflow-x: scroll;
   }
   
   .header > div{
@@ -31,7 +30,7 @@
     outline: none;
     color: #eee;
     font-size: 16px;
-    min-width: 250px;
+    /* min-width: 250px; */
   }
   
   .headerItems {
@@ -72,3 +71,14 @@
       all: unset;
       cursor: pointer;
   }
+
+  @media  (max-width: 600px) {
+    .pigLogo {
+        width: 150px;
+    }
+    .loginButton {
+      font-size: 12px;
+      padding: 8px 20px;
+      border-radius: 50px;
+    }
+}
