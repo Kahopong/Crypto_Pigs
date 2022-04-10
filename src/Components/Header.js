@@ -6,9 +6,13 @@ import './Header.css'
 
 export default function Header({setSearch}) {
   return (
-    <div className='header d-flex justify-content-between align-items-center'>
+    <div className='header'>
         <div className='logoContainer'>
             <img src={pigLogo} className='pigLogo' alt='' />
+        </div>
+
+        <div className='loginButton'>
+            <a href='https://testnets.opensea.io/collection/crypto-pigs-v3' target='_blank' rel="noreferrer">Explore on OpenSea</a>
         </div>
 
         <div className='searchBar d-flex align-items-center'>
@@ -32,9 +36,7 @@ export default function Header({setSearch}) {
             </div>
         </div> */}
 
-        <div className='loginButton'>
-            <a href='https://testnets.opensea.io/collection/crypto-pigs-v3' target='_blank' rel="noreferrer">Explore on OpenSea</a>
-        </div>
+        
 
     </div>
   )

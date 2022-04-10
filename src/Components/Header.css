@@ -1,7 +1,10 @@
 .header{
     color: #fff;
-    height: 100px;
+    min-height: 100px;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
   .header > div{
@@ -62,6 +65,7 @@
     border-radius: 50px;
     color: black;
     white-space: nowrap;
+    order: 5
   }
 
   .loginButton > a,
@@ -77,8 +81,17 @@
         width: 150px;
     }
     .loginButton {
-      font-size: 12px;
-      padding: 8px 20px;
+      font-size: 14px;
+      padding: 12px 24px;
       border-radius: 50px;
+    }
+
+    .header{
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .searchBar{
+      width: 80%;
     }
 }
