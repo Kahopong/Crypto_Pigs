@@ -1,6 +1,6 @@
 # Crypto Pigs - An NFT project
 
-crypto-pigs.vercel.app
+https://crypto-pigs.vercel.app
 
 Built with third-web and React.js
 
