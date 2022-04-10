@@ -15,8 +15,7 @@ function App() {
   useEffect(()=>{
     const getPigNfts = async() => {
       const openseaData = await axios.get(
-        "/assets?asset_contract_address=0x8661889Aa1D54504c3239744B800E79A7894a923"
-        // '/assets?asset_contract_address=0x8661889Aa1D54504c3239744B800E79A7894a923&order_direction=asc'
+        "https://mycors-proxy.herokuapp.com/https://testnets-api.opensea.io/assets?asset_contract_address=0x8661889Aa1D54504c3239744B800E79A7894a923"
       )
       console.log(openseaData)
       console.log(openseaData.data.assets)
