@@ -17,8 +17,6 @@ function App() {
       const openseaData = await axios.get(
         "https://mycors-proxy.herokuapp.com/https://testnets-api.opensea.io/assets?asset_contract_address=0x8661889Aa1D54504c3239744B800E79A7894a923"
       )
-      console.log(openseaData)
-      console.log(openseaData.data.assets)
       setPigListData(openseaData.data.assets)
     }
     getPigNfts()
